@@ -1,0 +1,40 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AlignTab",
+		"Angular-io-Code",
+		"AngularJS",
+		"ApplySyntax",
+		"auto-save",
+		"AutoFileName",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"Console Wrap",
+		"DocBlockr",
+		"EJS 2",
+		"Emmet",
+		"Flexbox Snippets",
+		"GitGutter",
+		"HTML-CSS-JS Prettify",
+		"HTML5",
+		"Jade",
+		"LESS",
+		"LoremIpsum",
+		"Markdown Preview",
+		"Ngx HTML",
+		"Numix Theme",
+		"Package Control",
+		"PowerCursors",
+		"Riot Syntax",
+		"SCSS",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"TypeScript",
+		"Vuejs Complete Package"
+	]
+}

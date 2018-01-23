@@ -1,0 +1,20 @@
+// Settings in here override those in "/User/consolewrap.sublime-settings",
+
+{
+  "js": {
+    "single_quotes": true,
+    "log_types": ["log", "error"],
+    "semicolon": false
+  },
+  "fileTypeMap" : {                   // Maps file type to wrapper. For example "text.html.vue": "js" means use js wrapper in vue js files
+      "text.html.vue"  : "js",        // php,python,js is included by dafault ("embedding.php": "php", "source.js": "js", "source.python": "py")
+      "source.ts"      : "js",
+      "source.tsx"     : "js",
+      "source.coffee"  : "js",
+      "text.html.basic": "js",
+      "text.html.blade": "js",
+      "text.html.twig" : "js",
+      "text.html.js" : "js",
+      "source.js.gulpfile": "js"
+  }
+}

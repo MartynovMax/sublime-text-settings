@@ -1,0 +1,158 @@
+[
+  // Rename current file
+  { "keys": ["shift+f6"], "command": "file_rename" },
+  
+  // Enable/disable auto saving
+  { "keys": ["command+shift+s"], "command": "auto_save" },
+  
+  // Remove left indent (Tab)
+  { "keys": ["shift+tab"], "command": "unindent" },
+  
+  // Add new line
+  {
+    "keys": ["shift+enter"],
+    "command": "run_macro_file",
+    "args": {"file": "res://Packages/Default/Add Line.sublime-macro"}
+  },
+
+  // Duplicate selection or line
+  { "keys": ["command+d"], "command": "duplicate_line" },
+  
+  // Delete line
+  {
+    "keys": ["command+y"],
+    "command": "run_macro_file",
+    "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}
+  },
+
+  // Scroll the current line to center
+  { "keys": ["ctrl+s"], "command": "show_at_center" },
+
+  // Align by ReqExp
+  {
+   "keys": ["command+l"], "command": "align_tab",
+   "args" : {"live_preview" : true}
+  },
+
+  // Focus side bar
+  { "keys": ["command+`"], "command": "focus_side_bar" },
+
+  // Toggle side bar
+  { "keys": ["command+b"], "command": "toggle_side_bar" },
+
+  // Focus next/prev tab
+  { "keys": ["command+alt+left"], "command": "prev_view" },
+  { "keys": ["command+alt+right"], "command": "next_view" },
+
+  // Focus next/prev tab in stack
+  { "keys": ["alt+tab"], "command": "next_view_in_stack" },
+  { "keys": ["alt+shift+tab"], "command": "prev_view_in_stack" },
+
+  // Make selection to upper/lower case  
+  { "keys": ["command+shift+u"], "command": "upper_case" },
+  { "keys": ["command+shift+l"], "command": "lower_case" },
+
+  // Toogle context menu
+  { "keys": ["ctrl+c"], "command": "context_menu" },
+
+  // Toggle comment
+  {
+    "keys": ["command+/"],
+    "command": "run_multiple",
+    "args": {
+      "commands": [
+        { "command": "toggle_comment", "args": { "block": false } },
+        { "command": "move", "args": {"by": "lines", "forward": true} },
+      ]
+    }
+  },
+  {
+    "keys": ["command+t"],
+    "command": "run_multiple",
+    "args": {
+      "commands": [
+        { "command": "toggle_comment", "args": { "block": false } },
+        { "command": "move", "args": {"by": "lines", "forward": true} },
+      ]
+    }
+  },
+
+  // Paste
+  { "keys": ["command+shift+v"], "command": "paste_from_history" },
+  { "keys": ["command+v"], "command": "paste_and_indent"},
+  
+  // Wrapper console.log()
+  { 
+    "keys": ["command+q"], 
+    "command": "console_wrap",
+    "args": {"insert_before": false}
+  },
+
+  // Swap selected lines
+  { "keys": ["command+shift+up"], "command": "swap_line_up" },
+  { "keys": ["command+shift+down"], "command": "swap_line_down" },
+  
+  // Find and replace
+  { "keys": ["command+r"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+  
+  // Go to next/prev match
+  { "keys": ["command+g"], "command": "find_next" },
+  { "keys": ["command+shift+g"], "command": "find_prev" },
+
+  // Find next match of a selection and set a new caret (Multiple carets)
+  { "keys": ["super+shift+g"], "command": "find_under_expand" },
+  
+  // Find all matches of a selection and set carets to all of them (Multiple carets)
+  { "keys": ["super+ctrl+g"], "command": "find_all_under" },
+
+  // Multiple carets
+  { "keys": ["shift+alt+up"], "command": "select_lines", "args": {"forward": false} },
+  { "keys": ["shift+alt+down"], "command": "select_lines", "args": {"forward": true} },
+
+  // Move caret (up/down) multiple lines (10) at the time
+  {
+    "keys": ["alt+up"],
+    "command": "run_multiple",
+    "args": {
+      "commands": [
+        { "command": "move", "args": {"by": "lines", "forward": false} },
+        { "command": "move", "args": {"by": "lines", "forward": false} },
+        { "command": "move", "args": {"by": "lines", "forward": false} },
+        { "command": "move", "args": {"by": "lines", "forward": false} },
+        { "command": "move", "args": {"by": "lines", "forward": false} },
+        { "command": "move", "args": {"by": "lines", "forward": false} },
+        { "command": "move", "args": {"by": "lines", "forward": false} },
+        { "command": "move", "args": {"by": "lines", "forward": false} },
+        { "command": "move", "args": {"by": "lines", "forward": false} },
+        { "command": "move", "args": {"by": "lines", "forward": false} },
+      ]
+    }
+  },
+  {
+    "keys": ["alt+down"],
+    "command": "run_multiple",
+    "args": {
+      "commands": [
+        { "command": "move", "args": {"by": "lines", "forward": true} },
+        { "command": "move", "args": {"by": "lines", "forward": true} },
+        { "command": "move", "args": {"by": "lines", "forward": true} },
+        { "command": "move", "args": {"by": "lines", "forward": true} },
+        { "command": "move", "args": {"by": "lines", "forward": true} },
+        { "command": "move", "args": {"by": "lines", "forward": true} },
+        { "command": "move", "args": {"by": "lines", "forward": true} },
+        { "command": "move", "args": {"by": "lines", "forward": true} },
+        { "command": "move", "args": {"by": "lines", "forward": true} },
+        { "command": "move", "args": {"by": "lines", "forward": true} },
+      ]
+    }
+  },
+
+  // Plugin PowerCursors
+  { "keys": ["ctrl+="], "command": "power_cursor_add" },
+  { "keys": ["ctrl++"], "command": "power_cursor_add" },
+  { "keys": ["ctrl+-"], "command": "power_cursor_remove", "context": [ { "key": "in_cursor_transition" } ]},
+  { "keys": ["ctrl+["], "command": "power_cursor_select", "args": { "forward": false } },
+  { "keys": ["ctrl+]"], "command": "power_cursor_select", "args": { "forward": true } },
+  { "keys": ["ctrl+enter"], "command": "power_cursor_activate", "context": [ { "key": "in_cursor_transition" } ]},
+  { "keys": ["escape"], "command": "power_cursor_exit", "context": [ { "key": "in_cursor_transition" } ]},
+]

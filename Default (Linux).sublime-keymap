@@ -1,0 +1,50 @@
+[
+  { "keys": ["shift+f6"], "command": "file_rename" },
+  { "keys": ["shift+tab"], "command": "unindent" },
+  { "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"} },
+
+  { "keys": ["ctrl+q"], "command": "unindent" },
+  { "keys": ["ctrl+d"], "command": "duplicate_line" },
+  { "keys": ["ctrl+shift+d"], "command": "find_under_expand" },
+  { "keys": ["ctrl+y"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+  { "keys": ["ctrl+shift+s"], "command": "auto_save" },
+  { "keys": ["ctrl+r"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+  { "keys": ["ctrl+g"], "command": "find_next" },
+  { "keys": ["ctrl+e"], "command": "goto_definition" },
+  { "keys": ["ctrl+shift+g"], "command": "find_prev" },
+  {
+    "keys": ["ctrl+/"],
+    "command": "run_multiple",
+    "args": {
+      "commands": [
+        { "command": "toggle_comment", "args": { "block": false } },
+        { "command": "move", "args": {"by": "lines", "forward": true} },
+      ]
+    }
+  },
+  {
+    "keys": ["ctrl+t"],
+    "command": "run_multiple",
+    "args": {
+      "commands": [
+        { "command": "toggle_comment", "args": { "block": false } },
+        { "command": "move", "args": {"by": "lines", "forward": true} },
+      ]
+    }
+  },
+  { "keys": ["ctrl+shift+v"], "command": "paste_from_history" },
+  { "keys": ["ctrl+v"], "command": "paste_and_indent"},
+  {
+   "keys": ["ctrl+l"], "command": "align_tab",
+   "args" : {"live_preview" : true}
+  },
+  { "keys": ["ctrl+`"], "command": "focus_side_bar" },
+  { "keys": ["ctrl+'"], "command": "goto_python_definition"},
+  { "keys": ["alt+ctrl+left"], "command": "back_to_python_definition"},
+  { "keys": ["ctrl+b"], "command": "toggle_side_bar" },
+  { 
+    "keys": ["ctrl+q"], 
+    "command": "console_wrap",
+    "args": {"insert_before": false}
+  },
+]

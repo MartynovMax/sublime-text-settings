@@ -1,0 +1,32 @@
+[
+	{ "keys": ["ctrl+d"], "command": "duplicate_line" },
+	{ "keys": ["ctrl+shift+d"], "command": "find_under_expand" },
+	{ "keys": ["ctrl+y"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"} },
+	{ "keys": ["shift+f6"], "command": "file_rename" },
+	{ "keys": ["ctrl+shift+s"], "command": "auto_save" },
+	{ "keys": ["shift+tab"], "command": "unindent" },
+  { "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Add Line.sublime-macro"} },
+  { "keys": ["ctrl+r"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+  { "keys": ["ctrl+g"], "command": "find_next" },
+  { "keys": ["ctrl+shift+g"], "command": "find_prev" },
+  {
+    "keys": ["ctrl+/"],
+    "command": "run_multiple",
+    "args": {
+      "commands": [
+        { "command": "toggle_comment", "args": { "block": false } },
+        { "command": "move", "args": {"by": "lines", "forward": true} },
+      ]
+    }
+  },
+  {
+    "keys": ["ctrl+t"],
+    "command": "run_multiple",
+    "args": {
+      "commands": [
+        { "command": "toggle_comment", "args": { "block": false } },
+        { "command": "move", "args": {"by": "lines", "forward": true} },
+      ]
+    }
+  }
+]
